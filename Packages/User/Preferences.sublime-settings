@@ -13,14 +13,17 @@
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
+	"phoenix_color_blue": true,
+	"phoenix_color_expanded_folder": true,
 	"rulers":
 	[
 		80
 	],
 	"tab_size": 2,
+	"theme": "Phoenix Dark.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true,
-	"word_separators": "./\\()\"'-_:,.;<>~!@#%^&*|+=[]{}`~?",
+	"word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?",
 	"word_wrap": false,
 	"wrap_width": 80
 }
