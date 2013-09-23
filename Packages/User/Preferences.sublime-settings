@@ -1,12 +1,16 @@
 {
 	"caret_style": "phase",
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
 	"copy_with_empty_selection": false,
 	"detect_slow_plugins": false,
 	"draw_white_space": "all",
 	"font_face": "DejaVu Sans Mono",
 	"font_size": 9,
 	"highlight_line": true,
-	"ignored_packages":	[],
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"rulers":
@@ -16,8 +20,7 @@
 	"tab_size": 2,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true,
-	"word_wrap": false,
-	"wrap_width": 80,
-	"highlight_modified_tabs": true,
 	"word_separators": "./\\()\"'-_:,.;<>~!@#%^&*|+=[]{}`~?",
+	"word_wrap": false,
+	"wrap_width": 80
 }
