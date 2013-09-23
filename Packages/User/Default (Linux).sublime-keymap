@@ -1,0 +1,68 @@
+[
+	{ "keys": ["ctrl+'"], "command": "expand_selection_to_quotes"},
+	{ "keys": ["ctrl+alt+shift+n"], "command": "advanced_new_file"},
+	{ "keys": ["ctrl+shift+x"], "command": "unexpand_tabs", "args": { "set_translate_tabs": false } },
+	{ "keys": ["ctrl+space"], "command": "auto_complete" },
+	{ "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
+		[
+			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
+			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+		]
+	},
+
+	{ "keys": ["ctrl+shift+r"], "command": "goto_symbol_in_project" },
+
+	{ "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
+	{ "keys": ["f12"], "command": "goto_definition" },
+
+	// scroll half page up and down
+	{"keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 40.0}, "context": [{ "key": "setting.command_mode" }]},
+	{"keys": ["ctrl+d"], "command": "scroll_lines", "args": {"amount": -40.0}, "context": [{"key": "setting.command_mode"}]},
+
+	// multiple visual line
+	{ "keys": ["ctrl+shift+j"], "command": "select_lines", "args": {"forward": true} },
+	{ "keys": ["ctrl+shift+k"], "command": "select_lines", "args": {"forward": false} },
+
+	// tab movements (back and forth)
+	{"keys": ["g", "t"], "command": "next_view", "context": [ { "key": "setting.command_mode", "operand": true }, { "key": "setting.is_widget", "operand": false } ] },
+	{"keys": ["g", "T"], "command": "prev_view", "context": [ { "key": "setting.command_mode", "operand": true }, { "key": "setting.is_widget", "operand": false } ] },
+	{ "keys": ["g", "1"], "command": "select_by_index", "args": { "index": 0 } },
+	{ "keys": ["g", "2"], "command": "select_by_index", "args": { "index": 1 } },
+	{ "keys": ["g", "3"], "command": "select_by_index", "args": { "index": 2 } },
+	{ "keys": ["g", "4"], "command": "select_by_index", "args": { "index": 3 } },
+	{ "keys": ["g", "5"], "command": "select_by_index", "args": { "index": 4 } },
+	{ "keys": ["g", "6"], "command": "select_by_index", "args": { "index": 5 } },
+	{ "keys": ["g", "7"], "command": "select_by_index", "args": { "index": 6 } },
+	{ "keys": ["g", "8"], "command": "select_by_index", "args": { "index": 7 } },
+	{ "keys": ["g", "9"], "command": "select_by_index", "args": { "index": 8 } },
+	{ "keys": ["g", "0"], "command": "select_by_index", "args": { "index": 9 } },
+	{ "keys": ["ctrl+shift+alt+k"], "command": "swap_line_up" },
+	{ "keys": ["ctrl+shift+alt+j"], "command": "swap_line_down" },
+	{
+			"keys": ["alt+down"], "command": "navigate_results",
+			"context": [
+					{"key": "setting.command_mode", "operand": true}
+			],
+			"args": {"direction": "forward"}
+	},
+	{
+			"keys": ["alt+up"], "command": "navigate_results",
+			"context": [
+					{"key": "setting.command_mode", "operand": true}
+			],
+			"args": {"direction": "backward"}
+	},
+	{
+			"keys": ["alt+left"], "command": "clear_selection",
+			"context": [
+					{"key": "setting.command_mode", "operand": true}
+			]
+	},
+	{
+			"keys": ["alt+right"], "command": "goto_comment",
+			"context": [
+					{"key": "setting.command_mode", "operand": true}
+			]
+	}
+]
