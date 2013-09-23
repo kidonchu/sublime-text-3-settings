@@ -64,5 +64,18 @@
 			"context": [
 					{"key": "setting.command_mode", "operand": true}
 			]
-	}
+	},
+	{ "keys": ["{"], "command": "insert_snippet", "args": {"contents": "{\n\t$0\n}\n"}, "context":
+		[
+				{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+				{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+				{ "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|$)", "match_all": true }
+		]
+	},
+	{ "keys": ["{"], "command": "insert_snippet", "args": {"contents": "{\n\t${0:$SELECTION}\n}\n"}, "context":
+		[
+				{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+				{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+		]
+	},
 ]
