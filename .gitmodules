@@ -1,0 +1,3 @@
+[submodule "Packages/User/snippets"]
+	path = Packages/User/snippets
+	url = git://github.com/kidonchu/sublime-snippets.git
