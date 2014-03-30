@@ -1,7 +1,7 @@
 [
 	{ "keys": ["ctrl+'"], "command": "expand_selection_to_quotes"},
 	{ "keys": ["ctrl+alt+shift+n"], "command": "advanced_new_file"},
-	{ "keys": ["ctrl+shift+x"], "command": "unexpand_tabs", "args": { "set_translate_tabs": false } },
+	{ "keys": ["ctrl+shift+x"], "command": "expand_tabs", "args": { "set_translate_tabs": true } },
 	{ "keys": ["ctrl+space"], "command": "auto_complete" },
 	{ "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
 		[
